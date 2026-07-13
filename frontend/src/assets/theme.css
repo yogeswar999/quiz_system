@@ -1,0 +1,100 @@
+:root {
+  --primary: #1d4ed8;
+  --primary-dark: #1e3a8a;
+  --primary-light: #eff6ff;
+  --accent: #3b82f6;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --bg: #f5f8ff;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+  color: #1f2937;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.app-sidebar {
+  background-color: #ffffff;
+  min-height: calc(100vh - 56px);
+  border-right: 1px solid #e5e7eb;
+}
+
+.app-sidebar .nav-link {
+  color: #374151;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  padding: 10px 14px;
+}
+.app-sidebar .nav-link.active,
+.app-sidebar .nav-link:hover {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.quiz-card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(29, 78, 216, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.quiz-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(29, 78, 216, 0.15);
+}
+
+.timer-badge {
+  font-variant-numeric: tabular-nums;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+}
+
+.option-card {
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.option-card:hover {
+  border-color: var(--accent);
+  background-color: var(--primary-light);
+}
+.option-card.selected {
+  border-color: var(--primary);
+  background-color: var(--primary-light);
+  font-weight: 600;
+}
+
+.auth-card {
+  max-width: 420px;
+  margin: 60px auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(29, 78, 216, 0.12);
+  border: none;
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.table thead {
+  background-color: var(--primary-light);
+}
